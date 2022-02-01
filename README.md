@@ -14,7 +14,7 @@ Ao abrir o modelo são mostradas as informações espaciais do modelo em milíme
 ## Tecnologias utilizadas
 O projeto foi criado utilizando react-create-app e utiliza as seguintes tecnologias:
 
-- react-three-forge
+- react-three-fiber
 - three
 - chakra-ui
 - eslint
