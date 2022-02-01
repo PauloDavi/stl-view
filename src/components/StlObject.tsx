@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 
 import { useLoader, useThree } from 'react-three-fiber';
-import * as three from 'three';
-import { Box3, Vector3 } from 'three';
+import { Box3, Mesh, Vector3 } from 'three';
 import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
 
 interface StlObjectProps {
@@ -14,7 +13,7 @@ export function StlObject({ url }: StlObjectProps) {
 
   const copiedScene = useMemo(() => geom.clone(), [geom]);
 
-  const ref = useRef<three.Mesh>();
+  const ref = useRef<Mesh>();
 
   const { camera } = useThree();
 
@@ -29,12 +28,11 @@ export function StlObject({ url }: StlObjectProps) {
       const size = boundingBox.getSize(new Vector3(0, 0, 0));
 
       ref.current.translateX(-center.x + size.x / 2);
-      ref.current.translateY(-center.y + size.y / 2);
+      ref.current.translateY(-center.y + size.y / 2 - 16);
       ref.current.translateZ(-center.z + size.z / 2);
 
       camera.position.set(50, 20, 50);
       camera.lookAt(new Vector3(0, 0, 0));
-      // camera.translateY(70);
     }
   });
 
