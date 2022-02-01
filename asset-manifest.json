@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/stl-view/static/css/main.0051c429.css",
+    "main.js": "/stl-view/static/js/main.531058e8.js",
+    "index.html": "/stl-view/index.html",
+    "main.0051c429.css.map": "/stl-view/static/css/main.0051c429.css.map",
+    "main.531058e8.js.map": "/stl-view/static/js/main.531058e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0051c429.css",
+    "static/js/main.531058e8.js"
+  ]
+}
