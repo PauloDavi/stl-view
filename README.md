@@ -1,5 +1,5 @@
 # STL View
-Site para visualização 3D de arquivos stl pelo browser, acesse a aplicação [Demo](http://localhost:3000) para testar.
+Site para visualização 3D de arquivos stl pelo browser, acesse a aplicação [Demo](http://paulodavi.me/stl-view/) para testar.
 
 <img src="./.github/home.png" alt="home" width="100%">
 
